@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Site under construction</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico"/>
+    <style>
+        @font-face {
+            font-family: 'tf2';
+            src: url("assets/tf2build.ttf");
+        }
+        body{
+            margin:0px;
+            display:flex;
+            overflow: hidden;
+        }
+        .cursive{
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            color: #d48b1d;
+            text-shadow: -2px 2px 0px  #dabb10,
+                         -4px 4px 0px #c02bee,
+                         -6px 6px 0px #00c2cb,
+                         -8px 8px 0px #a0114d,
+                         -10px 10px 0px #553c9a;
+        }
+        #video-container{
+            min-height:100vh;
+            position: absolute;
+            overflow: hidden;
+            width: 100vw;
+            display:flex;
+            justify-content: center;
+        }
+        video {
+            min-height: 100vh;
+        }
+        #main{
+            z-index: 2;
+        }
+        h1 {
+            font-size: 5em;
+            text-align: center;
+        }
+        .top-text{
+            font-family: 'tf2';
+            text-wrap: pretty;
+            color: #EBE2CA;
+            text-shadow: -10px 7px 10px black;
+            letter-spacing: .02em;
+        }
+        #main {
+            display: grid;
+            width: 100%;
+            height:100vh;
+            align-content: space-between;
+            justify-items: center;
+        }
+        @media screen and (min-width: 1920px) {
+            video {
+                min-width: 100vw;
+            }
+        }
+        @media screen and (max-width: 70em) {
+            .cursive {
+                margin-bottom: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video loop autoplay muted disablepictureinpicture playsinline poster="./assets/poster.png">
+            <source src="./assets/engineer-laptop-killer.mp4"/>
+        </video>
+    </div>
+    <div id="main">
+        <h1 class="top-text">Site under construction</h1>
+        <h1 class="cursive">Pardon my progress</h1>
+    </div>
+</body>
+
+
+</html>
